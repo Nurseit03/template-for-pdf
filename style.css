@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#doc-wrapper {
+  padding: 70px 50px 70px 50px;
+}
+
+#doc-logo {
+  width: 170px;
+  height: 170px;
+}
+
+.doc-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 70px 50px 70px 50px;
+  border: 1px solid rgb(168, 154, 154);
+}
+
+.doc-header {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+
+.info-title {
+  align-self: center;
+}
+
+/** Информация о составе семьи**/
+
+.requester-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.requester-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-top: 2.5px solid #cdcdcd;
+  border-bottom: 2.5px solid #cdcdcd;
+  padding: 5px 0 5px 0;
+}
+
+.requester-info-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/** Результаты услуги **/
+
+.service-result {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.service-result-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px 0 5px 0;
+}
+
+.service-result-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
