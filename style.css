@@ -1,86 +1,75 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-p {
-    font-size: 15px;
-    font-weight: 500;
+.document {
+  width: 210mm;
+  margin: 0 auto;
+  padding: 20mm;
+  font-family: Arial, sans-serif;
+  border: 1px solid #000;
 }
 
-#doc-wrapper {
-  padding: 70px 50px 70px 50px;
-}
-
-#doc-logo {
-  width: 170px;
-  height: 170px;
-}
-
-.doc-container {
+.document__header {
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
-  gap: 30px;
-  padding: 70px 50px 70px 50px;
-  border: 1px solid rgb(168, 154, 154);
+  justify-content: center;
 }
 
-.doc-header {
+.document__logo__container {
   display: flex;
   flex-direction: row;
-  gap: 15px;
-  align-items: center;
-}
-
-.info-title {
   align-self: center;
+  align-items: center;
+  gap: 10px;
 }
 
-/** Информация о составе семьи**/
+.document__logo {
+  width: 100px;
+}
 
-.requester-info {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.document__title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.document__info {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.document__info-table {
   width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
 }
 
-.requester-info-container {
+.document__info-table th,
+.document__info-table td {
+  border: 1px solid #000;
+  padding: 5px;
+  text-align: left;
+}
+
+.document__footer {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  border-top: 2.5px solid #cdcdcd;
-  border-bottom: 2.5px solid #cdcdcd;
-  padding: 5px 0 5px 0;
+  margin-top: 20px;
+  font-size: 15px;
 }
 
-.requester-info-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.document__footer-info {
+  margin-top: 10px;
 }
 
-/** Результаты услуги **/
-
-.service-result {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  width: 100%;
+.document__footer-qr {
+  text-align: center;
+  margin-top: 20px;
 }
 
-.service-result-container {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  padding: 5px 0 5px 0;
-}
-
-.service-result-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.document__footer-qr img {
+  width: 100px;
 }
